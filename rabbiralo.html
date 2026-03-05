@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abu Naser Manik</title>
+    <!-- Bangla font (optional but recommended) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;600&family=Inter:wght@400;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="manik.css">
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/d797f6557c.js" crossorigin="anonymous"></script>
+    <style></style>
+</head>
+
+<body class="bg-black text-white">
+    <!-- HERO WRAPPER -->
+    <section class="relative min-h-screen overflow-hidden">
+        <!-- Background image -->
+        <div class="absolute inset-0">
+            <img src="https://abunasermanikbd.com/wp-content/uploads/2024/07/14468715_1749214168670608_33462340348238-278x300.jpg"
+                alt="Hero Background" class="h-full w-full object-cover object-center" />
+            <!-- Dark + subtle blur overlay -->
+            <div class="absolute inset-0 bg-black/45"></div>
+        </div>
+
+        <!-- HEADER -->
+        <header class="relative z-20 w-full">
+            <div class="mx-auto lg:max-w-[980px] xl:max-w-[1250px] px-4 sm:px-6 lg:px-3">
+                <div class="flex items-center justify-between py-5">
+                    <!-- Mobile: Hamburger (LEFT) -->
+                    <button id="menuBtn" type="button"
+                        class="group md:hidden inline-flex items-center justify-center rounded-md  border border-white/25 bg-black/40 p-2 hover:bg-black/55 focus:outline-none focus:ring-2 focus:ring-yellow-400 "
+                        aria-controls="mobileMenu" aria-expanded="false">
+                        <!-- Hamburger icon -->
+                        <svg id="iconHamburger" xmlns="http://www.w3.org/2000/svg"
+                            class="h-6 w-6 text-white transition-colors group-hover:text-yellow-400" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+
+                        <!-- Close icon -->
+                        <svg id="iconClose" xmlns="http://www.w3.org/2000/svg"
+                            class="hidden h-6 w-6 text-white transition-colors group-hover:text-yellow-400" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+
+                    <!-- Brand -->
+                    <a href="#" class="text-center md:flex-none md:text-left">
+                        <span class="text-2xl sm:text-[22px] font-bold tracking-wide font-[Inter]">
+                            আবু নাছের মানিক
+                        </span>
+                    </a>
+
+                    <!-- Desktop nav -->
+                    <nav class="hidden md:flex items-center justify-center pr-32 lg:pr-12 xl:pr-32">
+                        <ul class="flex items-center gap-9 text-[15px] font-medium font-[Heebo]">
+                            <li> <a class="hover:text-yellow-300 transition" href="index.html">হোম</a></li>
+                            <li> <a class="hover:text-yellow-300 transition" href="Amarkotha.html">আমার কথা</a></li>
+                            <li><a class="hover:text-yellow-300 transition" href="publication.html">প্রকাশনা</a></li>
+                            <li><a class="hover:text-yellow-300 transition" href="album.html">অ্যালবাম</a></li>
+                            <li><a class="hover:text-yellow-300 transition" href="media.html">মিডিয়া</a></li>
+                            <li><a class="hover:text-yellow-300 transition" href="award.html">অ্যাওয়ার্ড</a></li>
+                            <li><a class="hover:text-yellow-300 transition" href="contact.html">যোগাযোগ</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Right icon (Desktop only like your 1st image) -->
+                    <div class="hidden md:flex">
+                        <a href="#"
+                            class="inline-flex py-3 px-3 items-center justify-center rounded-full bg-yellow-400 hover:bg-black transition"
+                            aria-label="YouTube">
+                            <!-- Youtube -->
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Dropdown Panel (3rd image style) -->
+        </header>
+
+        <!-- HERO CONTENT -->
+        <div class="relative z-10">
+            <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8 ">
+                <div class="min-h-[calc(100vh-88px)] flex items-center justify-center">
+                    <div class="w-full md:max-w-3xl text-center  mt-0 md:mt-32 mb-0 lg:mb-28 pl-0 lg:pl-4"
+                        data-aos="fade-up-big" data-aos-duration="1600">
+                        <h1 class="text-[38px] md:text-5xl xl:text-7xl font-bold leading-[1.05] font-[Inter]">
+                            বিস্তারিত
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Content -->
+    <section class="relative overflow-hidden bg-[#ffffff]">
+        <!-- background pic -->
+        <div class="pointer-events-none absolute inset-0 flex items-center justify-center">
+            <img src="https://abunasermanikbd.com/wp-content/uploads/2024/07/map_bg.png" alt="" class="h-[550px] w-[350px] object-cover opacity-30
+             md:h-[410px] md:w-[725px]
+             lg:h-auto lg:w-[650px]" />
+        </div>
+
+        <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 md:py-14 lg:py-24">
+            <!-- Parent (একটা div) -->
+            <div class="grid grid-cols-1 gap-10 xl:grid-cols-[minmax(0,2.50fr)_minmax(0,1fr)] xl:gap-40">
+
+                <!-- ================== 1st div (left) ================== -->
+                <div>
+                    <h2 class="text-[28px] md:text-4xl lg:text-5xl font-[Inter] leading-[1.05] font-bold text-gray-900 aos-full-left"
+                        data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+                        রবির আলো
+                    </h2>
+
+                    <p class="mt-6 text-sm md:text-[15px] lg:text-base font-[Heebo] leading-relaxed text-gray-800">
+                        আবু নাছের মানিক কারুকণ্ঠ আবৃত্তি পাঠশালার প্রতিষ্ঠাতা ও সভাপতি। তাঁর আবৃত্তি চর্চা নব্বই দশকে
+                        শুরু। ২৬ এপ্রিল’২০০৪ এ কুমিল্লার ডায়াবেটিক এসোসিয়েশন অডিটরিয়ামে প্রথম একক আবৃত্তি সন্ধ্যা “দুঃখ
+                        ভেজা মেঘ আঁড়ালের স্বপ্ন” পরিবেশনার মাধ্যমে আবৃত্তির বৃহত্তর আঙিনায় প্রবেশ মানিকের। একুশের
+                        গ্রন্থমেলা’১৫ উপলক্ষে তাঁর একক কণ্ঠে প্রকাশিত হলো নির্বাচিত প্রেমের কবিতার সংকলন “একাগ্র শিকড়
+                        প্রণয়” এবং সমাজ চেতনার কবিতা “শব্দের মিছিলের কথা বলি”। আবৃত্তি শিল্পের প্রতি প্রগাঢ় ভালোবাসা আর
+                        সাংগঠনিক আবৃত্তি চর্চার প্রতি দায়বদ্ধতায় মানিক ধারাবাহিক ও গতিশীল। সৎ, নিষ্ঠাবান, বন্ধুবাৎসল্য
+                        আবু নাছের মানিক আবৃত্তির বৃহত্তর পরিমণ্ডলে যেমন সবার প্রিয় একজন মানুষ, একইভাবে তাঁর আবৃত্তি
+                        সংকলন ‘একাগ্র শিকড় প্রণয়’ জনপ্রিয়তা অর্জন করবে এবং আপনাদের ভালো লাগবে বলে আমার বিশ্বাস।
+                    </p>
+
+
+
+                    <!-- bottom small area -->
+                    <div class="mt-10 flex items-end justify-center gap-0 lg:gap-6 mr-0 md:mr-72 xl:mr-0">
+
+                        <!-- yellow vertical line -->
+                        <span class="h-10 md:h-12 w-[1px] bg-[#f0c029]"></span>
+                        <div class="md:ml-0 lg:ml-5">
+                            <a href="abunasermanik.html">
+                                <p class="text-base font-normal text-end text-gray-700">পরবর্তী</p>
+                                <h5 class="mt-1 inline-block text-[11.2px] text-start font-semibold text-gray-900">
+                                    আমার ভাষা আমার স্বাধীনতা
+                                </h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ================== 2nd div (right) ================== -->
+                <div>
+                    <!-- md এবং তার উপরে: card + লেখা দেখাবে -->
+                    <div class="hidden md:block">
+                        <div class="grid gap-7 lg:grid-cols-2 xl:grid-cols-1">
+                            <!-- item 1 -->
+                            <a href="abunasermanik.html" class="flex gap-2">
+                                <img src="https://abunasermanikbd.com/wp-content/uploads/2024/07/144687-300x300.jpg"
+                                    alt="thumb 1" class="md:h-[90px] md:w-[90px] lg:h-32 lg:w-32  xl:h-[72px] xl:w-[72px] object-cover" />
+                                <div>
+                                    <p class="text-[15px] font-[Inter] font-bold text-yellow-500">আবু নাছের মানিক</p>
+                                    <p class="mt-1 text-sm font-[Heebo] leading-snug text-gray-800">
+                                        বাবা মায়ের প্রথম সন্তান আবু নাছের মানিক। অর্থনীতিতে সম্মানসহ স্নাতকোত্তর।
+                                    </p>
+                                </div>
+                            </a>
+
+                            <!-- item 2 -->
+                            <a href="amarlanguage.html" class="flex gap-2 md:justify-end lg:justify-start">
+                                <img src="https://abunasermanikbd.com/wp-content/uploads/2024/07/14468715_1749214168670608_3346234034823898809423_o-1-300x300.jpg"
+                                    alt="thumb 2" class="md:h-[90px] md:w-[90px] lg:h-32 lg:w-32  xl:h-[72px] xl:w-[72px] object-cover" />
+                                <div>
+                                    <p class="text-[15px] font-[Inter] font-bold text-yellow-500">আমার ভাষা আমার
+                                        স্বাধীনতা</p>
+                                    <p class="mt-1 text-sm font-[Heebo] leading-snug text-gray-800">
+                                        আবু নাছের মানিক অর্থনীতিতে সম্মানসহ স্নাতকোত্তর ডিগ্রি অর্জন করেন।
+                                    </p>
+                                </div>
+                            </a>
+
+                            <!-- item 3 -->
+                            <a href="rabbiralo.html" class="flex gap-2 md:col-span-2 lg:col-span-1">
+                                <img src="https://abunasermanikbd.com/wp-content/uploads/2024/07/14468715_1749214168670608_33462340348238-278x300.jpg"
+                                    alt="thumb 3" class="md:h-[90px] md:w-[90px] lg:h-32 lg:w-32 xl:h-[72px] xl:w-[78px] object-cover" />
+                                <div>
+                                    <p class="text-[15px] font-[Inter] font-bold text-yellow-500">রাব্বির আলো</p>
+                                    <p class="mt-1 text-sm font-[Heebo] leading-snug text-gray-800">
+                                        আবু নাছের মানিক আবৃত্তি পাঠশালার প্রতিষ্ঠাতা ও সভাপতি।
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- sm (মোবাইল) : লেখা/কার্ড বাদ—শুধু ৩টা ছোট ছবি -->
+                    <div class="md:hidden">
+                        <div class="space-y-8">
+                            <a class="block" href="abunasermanik.html"><img
+                                    src="https://abunasermanikbd.com/wp-content/uploads/2024/07/144687-300x300.jpg"
+                                    alt="thumb 1" class="h-28 w-full object-cover" /></a>
+                            <a class="block" href="amarlanguage.html"><img
+                                    src="https://abunasermanikbd.com/wp-content/uploads/2024/07/14468715_1749214168670608_3346234034823898809423_o-1-300x300.jpg"
+                                    alt="thumb 2" class="h-28 w-full object-cover" /></a>
+                            <a class="block" href="rabbiralo.html"><img
+                                    src="https://abunasermanikbd.com/wp-content/uploads/2024/07/14468715_1749214168670608_33462340348238-278x300.jpg"
+                                    alt="thumb 3" class="h-28 w-full object-cover" /></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer Start -->
+    <footer class="relative overflow-hidden text-white">
+        <!-- BG image -->
+        <div class="absolute inset-0" data-aos="fade-up">
+            <img src="https://abunasermanikbd.com/wp-content/uploads/2024/07/Screenshot-55.png" alt="Footer Background"
+                class="h-full w-full object-none object-right" />
+            <div class="absolute inset-0 bg-black/40"></div>
+        </div>
+
+        <div class="relative z-10">
+            <div class="mx-auto max-w-[1300px] px-5 sm:px-6 lg:px-8 py-10 lg:py-10">
+                <!-- Newsletter Card -->
+                <section class="rounded-2xl border border-white/15 bg-white/2 px-5 sm:px-10 py-7 lg:py-12">
+                    <div class="grid gap-8 lg:grid-cols-2 lg:items-center">
+                        <!-- Left content -->
+                        <div class="font-[Inter] text-center lg:text-left">
+                            <h2 class="text-[28px] md:text-[36px] lg:text-5xl font-bold tracking-tight">
+                                নিউজলেটার
+                            </h2>
+                            <p class="mt-4 text-[18px] sm:text-2xl text-white/85 leading-relaxed font-bold">
+                                আপডেটেড তথ্য, খবর এবং অন্তর্দৃষ্টি পেতে<br class="hidden sm:block" />
+                                নিউজলেটার সাইন আপ করুন।
+                            </p>
+                        </div>
+
+                        <!-- Right form (GRID) -->
+                        <form class="grid gap-4 sm:grid-cols-2" action="#" method="post">
+                            <input type="text" name="name" placeholder="Name"
+                                class="h-14 w-full rounded-full bg-white px-6 text-gray-900 placeholder:text-gray-500 outline-none border border-transparent focus:border-yellow-400 focus:ring-2 focus:ring-yellow-400" />
+
+                            <input type="email" name="email" placeholder="Email"
+                                class="h-14 w-full rounded-full bg-white px-6 text-gray-900 placeholder:text-gray-500 outline-none border border-transparent focus:border-yellow-400 focus:ring-2 focus:ring-yellow-400" />
+
+                            <button type="submit"
+                                class="sm:col-span-2 h-14 w-full rounded-full bg-[#f0c029] text-gray-900 font-semibold inline-flex items-center justify-center gap-2 transition hover:bg-black hover:text-white">
+                                <!-- Envelope icon -->
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16v16H4z" opacity=".15"></path>
+                                    <path d="M4 8l8 6 8-6"></path>
+                                    <path d="M4 6h16v14H4z"></path>
+                                </svg>
+                                Signup
+                            </button>
+                        </form>
+                    </div>
+                </section>
+
+                <!-- Bottom Footer Content (GRID - 4 columns) -->
+                <section class="mt-12 lg:mt-12">
+                    <div class="grid gap-10 sm:gap-12 md:grid-cols-3 lg:grid-cols-5 lg:gap-10">
+                        <!-- 1) Brand/About -->
+                        <div class="md:col-span-3 lg:col-span-2">
+                            <h3 class="text-[22px] font-bold font-[Inter]">
+                                আবু নাছের মানিক
+                            </h3>
+                            <p class="mt-5 text-white/80 leading-relaxed text-base font-[Heebo]">
+                                আমার বিশ্বাসের পথচলার যে জীবন, তা নিয়ে
+                                <br class="hidden lg:block" />
+                                আমি তৃপ্ত; আপনাদের স্নেহ-ভালবাসাই আমাকে
+                                <br class="hidden lg:block" />
+                                দায়বদ্ধ করে প্রতিক্ষণ।
+                            </p>
+                        </div>
+
+                        <!-- 2) Pages -->
+                        <div>
+                            <h3 class="text-2xl font-bold text-yellow-400 font-[Inter]">
+                                পৃষ্ঠা
+                            </h3>
+                            <ul class="mt-5 space-y-3 text-white/85 text-base font-[Heebo]">
+                                <li>
+                                    <a href="index.html" class="transition hover:text-yellow-400">হোম</a>
+                                </li>
+                                <li>
+                                    <a href="Amarkotha.html" class="transition hover:text-yellow-400">আমার কথা</a>
+                                </li>
+                                <li>
+                                    <a href="publication.html" class="transition hover:text-yellow-400">প্রকাশনা</a>
+                                </li>
+                                <li>
+                                    <a href="media.html" class="transition hover:text-yellow-400">মিডিয়া</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html" class="transition hover:text-yellow-400">যোগাযোগ</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- 3) Latest posts -->
+                        <div>
+                            <h3 class="text-2xl font-bold text-yellow-400 font-[Inter]">
+                                সর্বশেষ নিবন্ধ
+                            </h3>
+
+                            <!-- md পর্যন্ত: 3টা figure (images) -->
+                            <div class="mt-5 space-y-4 md:hidden">
+                                <figure class="overflow-hidden rounded-md border border-white/10 bg-black/30">
+                                    <a href="abunasermanik.html">
+                                        <img src="https://abunasermanikbd.com/wp-content/uploads/2024/07/144687.jpg"
+                                            alt="Latest post 1" class="h-48 sm:h-60 w-full object-cover" />
+                                    </a>
+                                </figure>
+                                <figure class="overflow-hidden rounded-md border border-white/10 bg-black/30">
+                                    <a href="amarlanguage.html">
+                                        <img src="https://abunasermanikbd.com/wp-content/uploads/2024/07/14468715_1749214168670608_3346234034823898809423_o-1-300x300.jpg"
+                                            alt="Latest post 2" class="h-48 sm:h-60 w-full object-cover" />
+                                    </a>
+                                </figure>
+                                <figure class="overflow-hidden rounded-md border border-white/10 bg-black/30">
+                                    <a href="rabbiralo.html">
+                                        <img src="https://abunasermanikbd.com/wp-content/uploads/2024/07/14468715_1749214168670608_33462340348238-278x300.jpg"
+                                            alt="Latest post 3" class="h-48 sm:h-60 w-full object-cover" />
+                                    </a>
+                                </figure>
+                            </div>
+
+                            <!-- বড় স্ক্রিন (lg+): anchor list -->
+                            <ul
+                                class="mt-5 hidden md:block space-y-3 text-white/85 font-[Heebo] text-[15px] font-semibold">
+                                <li>
+                                    <a href="abunasermanik.html" class="transition hover:text-yellow-400">আবু নাছের
+                                        মানিক</a>
+                                </li>
+                                <li>
+                                    <a href="amarlanguage.html" class="transition hover:text-yellow-400">আমার ভাষা আমার
+                                        স্বাধীনতা</a>
+                                </li>
+                                <li>
+                                    <a href="rabbiralo.html" class="transition hover:text-yellow-400">রাব্বির আলো</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- 4) Contact -->
+                        <div>
+                            <h3 class="text-2xl font-extrabold text-yellow-400">
+                                যোগাযোগ করুন
+                            </h3>
+
+                            <div class="mt-6 flex items-center gap-3" data-aos="zoom-out-left">
+                                <!-- YouTube -->
+                                <a href="#youtube" aria-label="YouTube"
+                                    class="h-8 w-8 rounded-full text-white hover:text-yellow-400 bg-white/20 hover:bg-[#ece9e8] transition inline-flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24"
+                                        fill="currentColor">
+                                        <path
+                                            d="M21.6 7.2a3 3 0 0 0-2.1-2.1C17.7 4.6 12 4.6 12 4.6s-5.7 0-7.5.5A3 3 0 0 0 2.4 7.2 31.7 31.7 0 0 0 2 12a31.7 31.7 0 0 0 .4 4.8 3 3 0 0 0 2.1 2.1c1.8.5 7.5.5 7.5.5s5.7 0 7.5-.5a3 3 0 0 0 2.1-2.1A31.7 31.7 0 0 0 22 12a31.7 31.7 0 0 0-.4-4.8ZM10 15.5v-7l6 3.5-6 3.5Z" />
+                                    </svg>
+                                </a>
+
+                                <!-- Facebook -->
+                                <a href="#facebook" aria-label="Facebook"
+                                    class="h-8 w-8 rounded-full text-white hover:text-yellow-400 bg-white/20 hover:bg-[#ece9e8] transition inline-flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24"
+                                        fill="currentColor">
+                                        <path
+                                            d="M13.5 22v-8h2.7l.4-3h-3.1V9.1c0-.9.3-1.6 1.6-1.6h1.7V4.8c-.3 0-1.4-.1-2.6-.1-2.6 0-4.4 1.6-4.4 4.5V11H7v3h2.8v8h3.7z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Divider + Copyright -->
+                    <div class="mt-10 lg:mt-12 border-t border-white/15 pt-6 text-center text-white/80 text-sm">
+                        Copyright © 2024 Abu Naser Manik, All rights reserved.
+                    </div>
+                </section>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Backdrop -->
+    <div id="menuBackdrop" class="fixed inset-0 z-[9998] hidden bg-black/40 md:hidden"></div>
+
+    <!-- Mobile Menu (portal style: outside hero section) -->
+    <div id="mobileMenu"
+        class="fixed left-4 right-4 top-[76px] z-[9999] hidden max-h-[calc(100vh-90px)] overflow-y-auto rounded-lg bg-white text-gray-800 shadow-2xl md:hidden"
+        role="dialog" aria-label="Mobile navigation">
+        <ul class="text-[16px] font-[Heebo]">
+            <li>
+                <a href="index.html" class="block px-4 py-3 hover:bg-yellow-400 hover:text-gray-900">হোম</a>
+            </li>
+
+            <li>
+                <a class="block px-4 py-3 hover:bg-yellow-400 hover:text-gray-900" href="Amarkotha.html">আমার কথা</a>
+            </li>
+            <li>
+                <a class="block px-4 py-3 hover:bg-yellow-400 hover:text-gray-900" href="publication.html">প্রকাশনা</a>
+            </li>
+            <li>
+                <a class="block px-4 py-3 hover:bg-yellow-400 hover:text-gray-900" href="album.html">অ্যালবাম</a>
+            </li>
+            <li>
+                <a class="block px-4 py-3 hover:bg-yellow-400 hover:text-gray-900" href="media.html">মিডিয়া</a>
+            </li>
+            <li>
+                <a class="block px-4 py-3 hover:bg-yellow-400 hover:text-gray-900" href="award.html">অ্যাওয়ার্ড</a>
+            </li>
+            <li>
+                <a class="block px-4 py-3 hover:bg-yellow-400 hover:text-gray-900" href="contact.html">যোগাযোগ</a>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        const btn = document.getElementById("menuBtn");
+        const menu = document.getElementById("mobileMenu");
+        const backdrop = document.getElementById("menuBackdrop");
+        const iconHamburger = document.getElementById("iconHamburger");
+        const iconClose = document.getElementById("iconClose");
+
+        function setOpen(isOpen) {
+            menu.classList.toggle("hidden", !isOpen);
+            backdrop.classList.toggle("hidden", !isOpen);
+
+            // icons ঠিকভাবে toggle
+            iconHamburger.classList.toggle("hidden", isOpen);
+            iconClose.classList.toggle("hidden", !isOpen);
+
+            btn.setAttribute("aria-expanded", String(isOpen));
+
+            // menu open থাকলে page scroll বন্ধ
+            document.documentElement.classList.toggle("overflow-hidden", isOpen);
+        }
+
+        btn.addEventListener("click", () => {
+            const willOpen = menu.classList.contains("hidden");
+            setOpen(willOpen);
+        });
+
+        backdrop.addEventListener("click", () => setOpen(false));
+
+        document.addEventListener("keydown", (e) => {
+            if (e.key === "Escape") setOpen(false);
+        });
+
+
+        // Playbutton portion
+        const video = document.getElementById("myVideo");
+        const btn2 = document.getElementById("playBtn");
+
+        btn2.addEventListener("click", () => {
+            video.play();
+            btn2.classList.add("hidden");
+        });
+
+        video.addEventListener("pause", () => btn2.classList.remove("hidden"));
+        video.addEventListener("ended", () => btn2.classList.remove("hidden"));
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            // duration: 800,   // animation duration (ms)     
+            // easing: "ease-out",
+            once: true,      // একবারই হবে
+            offset: 120,
+        });
+    </script>
+</body>
+
+</html>
