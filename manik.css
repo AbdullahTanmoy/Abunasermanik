@@ -91,3 +91,55 @@ body {
     transform: scale(1) !important;
     opacity: 1 !important;
 }
+
+.hero-slider-one {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    border-bottom-left-radius: 50% 50px;
+    border-bottom-right-radius: 50% 50px;
+}
+
+.hero-slider-overlay {
+    background: rgba(0, 0, 0, 0.36);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    pointer-events: none;
+}
+
+@media (min-width: 768px) {
+    .hero-slider-one {
+        border-bottom-left-radius: 50% 50px;
+        border-bottom-right-radius: 50% 50px;
+    }
+}
+
+.hero-next-section {
+    position: relative;
+    z-index: 1;
+    margin-top: -48px;
+    padding-top: 48px;
+}
+
+@media (min-width: 768px) {
+    .hero-next-section {
+        margin-top: -84px;
+        padding-top: 84px;
+    }
+}
+
+.footer-fixed-bg {
+    background-image: url("https://abunasermanikbd.com/wp-content/uploads/2024/07/Screenshot-55.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    transform: scale(1.08);
+    transform-origin: center center;
+}
+
+@media (max-width: 767px) {
+    .footer-fixed-bg {
+        transform: scale(1.03);
+    }
+}

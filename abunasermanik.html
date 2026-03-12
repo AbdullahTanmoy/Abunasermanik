@@ -20,14 +20,9 @@
 
 <body class="bg-black text-white">
     <!-- HERO WRAPPER -->
-    <section class="relative min-h-screen overflow-hidden">
-        <!-- Background image -->
-        <div class="absolute inset-0">
-            <img src="https://abunasermanikbd.com/wp-content/uploads/2024/07/144687-300x300.jpg" alt="Hero Background"
-                class="h-full w-full object-cover object-center" />
-            <!-- Dark + subtle blur overlay -->
-            <div class="absolute inset-0 bg-black/45"></div>
-        </div>
+    <section
+        class="hero-slider-one relative min-h-screen bg-[url('https://abunasermanikbd.com/wp-content/uploads/2024/07/144687-300x300.jpg')] bg-cover bg-center">
+        <div class="hero-slider-overlay absolute inset-0 bg-black/50"></div>
 
         <!-- HEADER -->
         <header class="relative z-20 w-full">
@@ -104,7 +99,7 @@
 
 
     <!-- Content -->
-    <section class="relative overflow-hidden bg-[#ffffff]">
+    <section class="hero-next-section relative overflow-hidden bg-[#ffffff]">
         <!-- background pic -->
         <div class="pointer-events-none absolute inset-0 flex items-center justify-center">
             <img src="https://abunasermanikbd.com/wp-content/uploads/2024/07/map_bg.png" alt="" class="h-[550px] w-[350px] object-cover opacity-30
@@ -155,43 +150,69 @@
                     <div class="hidden md:block">
                         <div class="grid gap-7 lg:grid-cols-2 xl:grid-cols-1">
                             <!-- item 1 -->
-                            <a href="abunasermanik.html" class="flex gap-2">
-                                <img src="https://abunasermanikbd.com/wp-content/uploads/2024/07/144687-300x300.jpg"
-                                    alt="thumb 1"
-                                    class="md:h-[90px] md:w-[90px] lg:h-32 lg:w-32  xl:h-[72px] xl:w-[72px] object-cover" />
+                            <a href="abunasermanik.html" class="flex gap-3 group">
+
+                                <div
+                                    class="flex-shrink-0 md:w-[90px] md:h-[90px] lg:w-32 lg:h-32 xl:w-[72px] xl:h-[72px] overflow-hidden rounded-lg">
+                                    <img src="https://abunasermanikbd.com/wp-content/uploads/2024/07/144687-300x300.jpg"
+                                        alt="thumb 1"
+                                        class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
+                                </div>
+
                                 <div>
-                                    <p class="text-[15px] font-[Inter] font-bold text-yellow-500">আবু নাছের মানিক</p>
-                                    <p class="mt-1 text-sm font-[Heebo] leading-snug text-gray-800">
+                                    <p class="text-[15px] font-[Inter] font-bold text-yellow-500 group-hover:underline">
+                                        আবু নাছের মানিক
+                                    </p>
+
+                                    <p class="mt-1 text-sm font-[Heebo] leading-snug text-gray-800 line-clamp-2">
                                         বাবা মায়ের প্রথম সন্তান আবু নাছের মানিক। অর্থনীতিতে সম্মানসহ স্নাতকোত্তর।
                                     </p>
                                 </div>
+
                             </a>
 
                             <!-- item 2 -->
-                            <a href="amarlanguage.html" class="flex gap-2 md:justify-end lg:justify-start">
-                                <img src="https://abunasermanikbd.com/wp-content/uploads/2024/07/14468715_1749214168670608_3346234034823898809423_o-1-300x300.jpg"
-                                    alt="thumb 2"
-                                    class="md:h-[90px] md:w-[90px] lg:h-32 lg:w-32 xl:h-[72px] xl:w-[72px] object-cover" />
+                            <a href="amarlanguage.html" class="flex gap-3 group md:justify-end lg:justify-start">
+
+                                <div
+                                    class="flex-shrink-0 md:w-[90px] md:h-[90px] lg:w-32 lg:h-32 xl:w-[72px] xl:h-[72px] overflow-hidden rounded-lg">
+                                    <img src="https://abunasermanikbd.com/wp-content/uploads/2024/07/14468715_1749214168670608_3346234034823898809423_o-1-300x300.jpg"
+                                        alt="thumb 2"
+                                        class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
+                                </div>
+
                                 <div>
-                                    <p class="text-[15px] font-[Inter] font-bold text-yellow-500">আমার ভাষা আমার
-                                        স্বাধীনতা</p>
-                                    <p class="mt-1 text-sm font-[Heebo] leading-snug text-gray-800">
+                                    <p class="text-[15px] font-[Inter] font-bold text-yellow-500 group-hover:underline">
+                                        আমার ভাষা আমার স্বাধীনতা
+                                    </p>
+
+                                    <p class="mt-1 text-sm font-[Heebo] leading-snug text-gray-800 line-clamp-2">
                                         আবু নাছের মানিক অর্থনীতিতে সম্মানসহ স্নাতকোত্তর ডিগ্রি অর্জন করেন।
                                     </p>
                                 </div>
+
                             </a>
 
                             <!-- item 3 -->
-                            <a href="rabbiralo.html" class="flex gap-2 md:col-span-2 lg:col-span-1">
-                                <img src="https://abunasermanikbd.com/wp-content/uploads/2024/07/14468715_1749214168670608_33462340348238-278x300.jpg"
-                                    alt="thumb 3"
-                                    class="md:h-[90px] md:w-[90px] lg:h-32 lg:w-32 xl:h-[72px] xl:w-[78px] object-cover" />
+                            <a href="rabbiralo.html" class="flex gap-3 group md:col-span-2 lg:col-span-1">
+
+                                <div
+                                    class="flex-shrink-0 md:w-[90px] md:h-[90px] lg:w-32 lg:h-32 xl:w-[72px] xl:h-[72px] overflow-hidden rounded-lg">
+                                    <img src="https://abunasermanikbd.com/wp-content/uploads/2024/07/14468715_1749214168670608_33462340348238-278x300.jpg"
+                                        alt="thumb 3"
+                                        class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
+                                </div>
+
                                 <div>
-                                    <p class="text-[15px] font-[Inter] font-bold text-yellow-500">রাব্বির আলো</p>
-                                    <p class="mt-1 text-sm font-[Heebo] leading-snug text-gray-800">
+                                    <p class="text-[15px] font-[Inter] font-bold text-yellow-500 group-hover:underline">
+                                        রাব্বির আলো
+                                    </p>
+
+                                    <p class="mt-1 text-sm font-[Heebo] leading-snug text-gray-800 line-clamp-2">
                                         আবু নাছের মানিক আবৃত্তি পাঠশালার প্রতিষ্ঠাতা ও সভাপতি।
                                     </p>
                                 </div>
+
                             </a>
                         </div>
                     </div>
@@ -218,11 +239,12 @@
 
 
     <!-- Footer Start -->
-    <footer class="relative overflow-hidden text-white">
+    <footer id="siteFooter" class="relative overflow-hidden text-white">
         <!-- BG image -->
-        <div class="absolute inset-0" data-aos="fade-up">
-            <img src="https://abunasermanikbd.com/wp-content/uploads/2024/07/Screenshot-55.png" alt="Footer Background"
-                class="h-full w-full object-none object-right" />
+        <div class="absolute inset-0 -z-10 overflow-hidden">
+            <div id="footerBg" class="footer-fixed-bg absolute -top-16 -bottom-16 left-0 right-0 will-change-transform">
+            </div>
+
             <div class="absolute inset-0 bg-black/40"></div>
         </div>
 
@@ -457,17 +479,75 @@
         });
 
 
-        // Playbutton portion
-        const video = document.getElementById("myVideo");
-        const btn2 = document.getElementById("playBtn");
+        // Footer background scroll-up effect
+        const footer = document.getElementById("siteFooter");
+        const footerBg = document.getElementById("footerBg");
 
-        btn2.addEventListener("click", () => {
-            video.play();
-            btn2.classList.add("hidden");
-        });
+        if (footer && footerBg) {
+            const isMobile = window.matchMedia("(max-width: 767px)").matches;
+            const maxOffset = isMobile ? 42 : 72;
+            const startFromBottom = isMobile ? 24 : 40;
+            const baseScale = isMobile ? 1.04 : 1.08;
+            let ticking = false;
+            let currentY = 0;
+            let targetY = 0;
+            let animating = false;
 
-        video.addEventListener("pause", () => btn2.classList.remove("hidden"));
-        video.addEventListener("ended", () => btn2.classList.remove("hidden"));
+            // Keep attachment scroll so transform movement remains visible.
+            footerBg.style.backgroundAttachment = "scroll";
+            footerBg.style.backgroundPosition = "center 28%";
+            footerBg.style.transform = `translate3d(0, 0px, 0) scale(${baseScale})`;
+
+            function animateFooterBg() {
+                // Extra smoothness: ease current offset toward target offset.
+                currentY += (targetY - currentY) * 0.14;
+
+                if (Math.abs(targetY - currentY) < 0.2) {
+                    currentY = targetY;
+                }
+
+                footerBg.style.transform = `translate3d(0, ${currentY}px, 0) scale(${baseScale})`;
+
+                if (currentY !== targetY) {
+                    requestAnimationFrame(animateFooterBg);
+                } else {
+                    animating = false;
+                }
+            }
+
+            function updateFooterBg() {
+                ticking = false;
+                const rect = footer.getBoundingClientRect();
+                const vh = window.innerHeight;
+
+                if (rect.bottom < 0 || rect.top > vh) return;
+
+                // Start movement as soon as footer enters viewport from bottom.
+                const progress = (vh - rect.top) / vh;
+                const p = Math.min(1, Math.max(0, progress));
+                // Smooth but noticeable movement across the whole footer viewport.
+                const eased = Math.pow(p, 0.78);
+                // Enter from slightly lower position, then slide up smoothly.
+                const entryOffset = (1 - p) * startFromBottom;
+                targetY = entryOffset - eased * maxOffset;
+
+                if (!animating) {
+                    animating = true;
+                    requestAnimationFrame(animateFooterBg);
+                }
+            }
+
+            function onFooterScroll() {
+                if (!ticking) {
+                    ticking = true;
+                    requestAnimationFrame(updateFooterBg);
+                }
+            }
+
+            window.addEventListener("scroll", onFooterScroll, { passive: true });
+            window.addEventListener("resize", updateFooterBg);
+            updateFooterBg();
+        }
     </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
