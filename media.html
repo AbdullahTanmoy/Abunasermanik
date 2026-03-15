@@ -84,7 +84,7 @@
 
           <!-- Right icon (Desktop only like your 1st image) -->
           <div class="hidden md:flex">
-            <a href="#"
+            <a href="https://www.youtube.com/@abunasermanik3160"
               class="inline-flex py-3 px-3 items-center justify-center rounded-full bg-yellow-400 hover:bg-black transition"
               aria-label="YouTube">
               <!-- Youtube -->
@@ -509,6 +509,16 @@
     </div>
   </footer>
   <!-- Footer End -->
+  <!-- Back to top button -->
+  <button id="toTopBtn" type="button" class="fixed bottom-6 right-6 z-50 inline-flex h-8 w-8 items-center justify-center
+         rounded bg-sky-600 text-white shadow hover:bg-sky-700" aria-label="Scroll to top"
+    onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2">
+      <path d="M12 19V5" />
+      <path d="M5 12l7-7 7 7" />
+    </svg>
+  </button>
 
   <!-- Backdrop -->
   <div id="menuBackdrop" class="fixed inset-0 z-[9998] hidden bg-black/40 md:hidden"></div>
@@ -712,6 +722,31 @@
       // easing: "ease-out",
       once: true,      // একবারই হবে
       offset: 120,
+    });
+  </script>
+  <script>
+    const toTopBtn = document.getElementById("toTopBtn");
+
+    function toggleToTop() {
+      // কতটুকু scroll হলে দেখাবে (আপনি 200/300/500 দিতে পারেন)
+      const showAfter = 550;
+
+      const show = window.scrollY > showAfter;
+
+      toTopBtn.classList.toggle("opacity-0", !show);
+      toTopBtn.classList.toggle("translate-y-3", !show);
+      toTopBtn.classList.toggle("pointer-events-none", !show);
+
+      toTopBtn.classList.toggle("opacity-100", show);
+      toTopBtn.classList.toggle("translate-y-0", show);
+      toTopBtn.classList.toggle("pointer-events-auto", show);
+    }
+
+    window.addEventListener("scroll", toggleToTop, { passive: true });
+    toggleToTop();
+
+    toTopBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
     });
   </script>
 </body>
